@@ -7,6 +7,9 @@ import PackageDescription
 
 let package = Package(
     name: "SKPhotoBrowser",
+    platforms: [
+        .iOS(.v8)
+    ],
     products: [
         .library(
             name: "SKPhotoBrowser",
@@ -15,7 +18,6 @@ let package = Package(
     targets: [
         .target(
             name: "SKPhotoBrowser",
-            dependencies: [],
             path: "SKPhotoBrowser")
     ]
 )
